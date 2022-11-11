@@ -1,0 +1,10 @@
+
+package main;
+
+public class BNI extends ATM {
+    
+            public void tampilkan() {
+            input(tarik_tunai, setor_tunai, saldo);
+            tampilData();
+        }
+}
