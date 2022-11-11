@@ -1,0 +1,37 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        BRI bri = new BRI();
+        BNI bni = new BNI();
+
+        while (true) {
+            System.out.println("\n-LIST KARTU ATM-");
+            System.out.println("1. BRI\n2. BNI\nk. Keluar");
+            System.out.println("Masukan Pilihan : ");
+            String pilihan = sc.next();
+
+            switch (pilihan) {
+                case "1":
+                    bri.tampilkan();
+                    break;
+                case "2":
+                    bni.setTarik("Tarik Tunai");
+                    bni.setSetor("Setor Tunai");
+                    bni.setSaldo(44000);
+                    bni.tampilkan();
+                    break;
+                case "K":
+                    System.out.println("-TERIMA KASIH");
+                    System.exit(0);
+                    break;
+            }
+
+        }
+    }
+}
