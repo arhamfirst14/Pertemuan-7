@@ -1,0 +1,45 @@
+package main;
+
+public class ATM {
+
+    protected String tarik_tunai, setor_tunai;
+    protected int saldo;
+
+    public void setTarik(String tarik_tunai) {
+        this.tarik_tunai = tarik_tunai;
+    }
+
+    public String getTarik() {
+        return tarik_tunai;
+    }
+
+    public void setSetor(String setor_tunai) {
+        this.setor_tunai = setor_tunai;
+    }
+
+    public String setSetor() {
+        return setor_tunai;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }
+
+    public int setSaldo() {
+        return saldo;
+
+    }
+
+    protected void input(String tarik_tunai, String setor_tunai, int saldo) {
+        setTarik(tarik_tunai);
+        setSetor(setor_tunai);
+        setSaldo(saldo);
+    }
+
+    public void tampilData() {
+        System.out.println("\nTarik Saldo   : " + this.tarik_tunai);
+        System.out.println("Setor Saldo     : " + this.setor_tunai);
+        System.out.println("Saldo           : " + this.saldo);
+
+    }
+}
