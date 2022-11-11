@@ -1,0 +1,12 @@
+
+package main;
+
+public class BRI extends ATM {
+    
+    
+    public void tampilkan() {
+        input("Tarik Tunai", "Setor Tunai", 23000);
+        tampilData();
+
+    }
+}
